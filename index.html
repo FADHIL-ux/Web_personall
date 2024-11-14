@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+    <style>
+        /* CSS untuk mempercantik tampilan */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 300px;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .menu {
+            margin: 20px 0;
+        }
+        .menu button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .menu button:hover {
+            background-color: #45a049;
+        }
+        .content {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Sederhana</h1>
+        
+        <div class="menu">
+            <button onclick="tampilkanNama()">Nama</button>
+            <button onclick="tampilkanAbout()">About</button>
+        </div>
+        
+        <div class="content" id="content">
+            <p>Silakan pilih menu di atas</p>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk menampilkan Nama
+        function tampilkanNama() {
+            document.getElementById("content").innerHTML = "<p>Nama: Muhammad Fadhil Lubis</p>";
+        }
+
+        // Fungsi untuk menampilkan About
+        function tampilkanAbout() {
+            document.getElementById("content").innerHTML = "<p>About: Ini adalah contoh website sederhana untuk menampilkan informasi Nama dan About.</p>";
+        }
+    </script>
+</body>
+</html>
